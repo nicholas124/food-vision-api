@@ -1,7 +1,7 @@
 FROM python:3.7.3-stretch
 
 # Maintainer info
-LABEL maintainer="erickson_ruaroii@dlsu.edu.ph"
+LABEL maintainer="nmuchelemba@gmail.com"
 
 # Make working directories
 RUN  mkdir -p  /food-vision-api

@@ -12,8 +12,11 @@ from numpy import array
 from json import dumps
 from uvicorn import run
 import os
+# import ray
+
 
 app = FastAPI()
+
 
 origins = ["*"]
 methods = ["*"]
@@ -166,5 +169,5 @@ async def get_net_image_prediction(image_link: str = ""):
     }
 
 if __name__ == "__main__":
-    port = int(os.environ.get('PORT', 5000))
-    run(app, host="0.0.0.0", port=port)
+    port = int(os.environ.get('PORT', 8099))
+    run(app, host="localhost", port=port)
