@@ -30,7 +30,7 @@ app.add_middleware(
     allow_headers = headers    
 )
 
-model_dir = "food-vision-model.h5"
+model_dir = "model/food-vision-model.h5"
 model = load_model(model_dir)
 
 class_predictions = array([
